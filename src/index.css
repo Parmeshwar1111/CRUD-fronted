@@ -1,0 +1,57 @@
+/* --- Modern Dashboard Theme --- */
+
+body {
+  background: #f2f5f8;
+  font-family: "Inter", sans-serif;
+}
+
+/* Card Styling */
+.custom-card {
+  border-radius: 18px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08) !important;
+  transition: transform 0.2s ease-in-out;
+  background: white;
+}
+
+.custom-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Table Styling */
+.table-custom thead {
+  background: #0d6efd;
+  color: white;
+}
+
+.table-custom tbody tr {
+  transition: 0.2s ease-in-out;
+}
+
+.table-custom tbody tr:hover {
+  background: #e8f1ff;
+}
+
+/* Button Styling */
+.btn-custom {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  filter: brightness(1.08);
+}
+
+/* Form Input Beautification */
+.form-control {
+  border-radius: 12px !important;
+  padding: 10px !important;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
