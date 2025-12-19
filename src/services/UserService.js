@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8081/user";
+const API_URL = "https://crud-backend-production-2543.up.railway.app/user";
 
 export const getUsers = () => axios.get(API_URL);
 export const createUser = (data) => axios.post(API_URL, data);
