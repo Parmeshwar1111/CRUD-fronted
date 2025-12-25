@@ -1,43 +1,37 @@
-/* --- Modern Dashboard Theme --- */
+/* ============================= */
+/* Modern Dashboard Theme (SAFE) */
+/* ============================= */
 
 body {
   background: #f2f5f8;
   font-family: "Inter", sans-serif;
 }
 
-/* Card Styling */
+/* ============================= */
+/* Custom Card (Only if used) */
+/* ============================= */
+
 .custom-card {
-  border-radius: 18px !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08) !important;
-  transition: transform 0.2s ease-in-out;
   background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
 }
 
 .custom-card:hover {
   transform: translateY(-4px);
 }
 
-/* Table Styling */
-.table-custom thead {
-  background: #0d6efd;
-  color: white;
-}
+/* ============================= */
+/* Custom Buttons (Optional) */
+/* ============================= */
 
-.table-custom tbody tr {
-  transition: 0.2s ease-in-out;
-}
-
-.table-custom tbody tr:hover {
-  background: #e8f1ff;
-}
-
-/* Button Styling */
 .btn-custom {
   background: linear-gradient(135deg, #0d6efd, #6610f2);
   color: white;
   border-radius: 10px;
   font-weight: 600;
-  padding: 10px;
+  padding: 8px 12px;
   transition: 0.3s ease;
 }
 
@@ -45,72 +39,45 @@ body {
   filter: brightness(1.08);
 }
 
-/* Form Input Beautification */
-.form-control {
-  border-radius: 12px !important;
-  padding: 10px !important;
-}
+/* ============================= */
+/* Forms (Bootstrap-Friendly) */
+/* ============================= */
 
 .form-label {
   font-weight: 600;
   color: #333;
 }
+
+/* ❌ REMOVED: 
+.form-control {
+  padding, border-radius, !important
+}
+→ Bootstrap handles this better
+*/
+
 /* ============================= */
-/* Mobile View (Phones & Small Devices) */
+/* Mobile View (SAFE) */
 /* ============================= */
+
 @media (max-width: 768px) {
 
+  /* Typography only */
   body {
-    padding: 10px;
     font-size: 14px;
   }
 
-  /* Cards */
+  /* Cards spacing only */
   .custom-card {
-    border-radius: 14px !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.08) !important;
+    border-radius: 14px;
     margin-bottom: 16px;
   }
 
-  /* Tables → Scroll on Mobile */
-  .table-responsive {
-    overflow-x: auto;
+  /* Headings scale */
+  h1 {
+    font-size: 1.5rem;
   }
 
-  .table-custom {
-    font-size: 13px;
-  }
-
-  .table-custom thead {
-    font-size: 13px;
-  }
-
-  /* Buttons */
-  .btn-custom {
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-  }
-
-  /* Forms */
-  .form-control {
-    padding: 12px !important;
-    font-size: 14px;
-  }
-
-  .form-label {
-    font-size: 14px;
-  }
-
-  /* Spacing Fix */
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* Headings */
-  h1, h2, h3 {
+  h2, h3 {
     font-size: 1.2rem;
   }
 }
-
